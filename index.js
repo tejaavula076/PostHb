@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-let port = 9081;
+let port = process.env.PORT || 9081;
 const { faker } = require('@faker-js/faker');
 
 const path = require("path");
