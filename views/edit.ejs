@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit the existing Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="newPostHeading">
+        <h1>Edit Your Post</h1>
+        <form method="post" action="/posts/<%= currentPost.userId %>?_method=patch">
+            <div class="newuserSection">
+                <label for="user">Change your Username</label>
+                <input id="user" name="username" value="<%= currentPost.username %>">
+            </div>
+            <div class="newCommentSection">
+                <label for="content">Change your Content</label>
+                <textarea id="content" name="content" rows="4" cols="40"><%= currentPost.content %></textarea>
+            </div>
+            <br>
+            <div>
+                <button class="newPost2">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

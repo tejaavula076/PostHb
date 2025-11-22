@@ -31,8 +31,11 @@
 
                 </div>
                 <div class="btnGroup">
-                    <button class="editBtn">Edit</button>
-                    <button class="deleteBtn">Delete</button>   
+                    <button class="editBtn"><a href="/posts/<%= post.userId %>"
+                            style="text-decoration: none;">Edit</a></button>
+                    <form method="post" action="/posts/<%= post.userId %>?_method=delete">
+                        <button class="deleteBtn"><a style="text-decoration: none;">Delete</a></button>
+                    </form>
                 </div>
             </div>
             <% } %>
