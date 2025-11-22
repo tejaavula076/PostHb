@@ -1,0 +1,93 @@
+body {
+    background-color: #fbe3e8;
+}
+
+.cardBg {
+    background-color: #ebf6f5;
+    width: 220px;
+    height: 258px;
+    box-shadow: 8px 8px 15px rgba(16, 15, 15, 0.25);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+h3 {
+    display: inline;
+}
+
+.userContent {
+    text-align: center;
+}
+
+.newPost {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 2px;
+}
+
+.btnGroup {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin: 3px;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.editBtn {
+    background-color: #8b89e8;
+    border-radius: 5px;
+    padding: 2px;
+    display: block;
+    width: 50px;
+    color: white;
+}
+
+.deleteBtn {
+    background-color: #c70e0e;
+    border-radius: 5px;
+    padding: 2px;
+    display: block;
+    width: 50px;
+    color: white;
+}
+
+.newPost2 {
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.newPostHeading {
+    text-align: center;
+}
+
+.indexPost {
+    display: flex;
+    flex-direction: row; flex-wrap: wrap;    
+}
+
+.newFormClass {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.newCommentSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newuserSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 34px;
+    margin: 10px;
+}

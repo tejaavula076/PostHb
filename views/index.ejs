@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostHub</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">PostHub</h1>
+    <div class="newPost">
+        <button class="newPost2"><a style="text-decoration: none;" href="/new/posts">Create New Post</a></button>
+    </div>
+
+    <div class="indexPost">
+        <% for(let post of posts){ %>
+            <div class="cardBg">
+                <div>
+                    <img src="<%= post.avatar %>" width="177" height="120">
+
+                </div>
+                <div class="userContent">
+                    <h3>
+                        @<%= post.username %>
+                    </h3>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <p>
+                        <%= post.content %>
+                    </p>
+
+                </div>
+                <div class="btnGroup">
+                    <button class="editBtn">Edit</button>
+                    <button class="deleteBtn">Delete</button>   
+                </div>
+            </div>
+            <% } %>
+    </div>
+</body>
+
+</html>
