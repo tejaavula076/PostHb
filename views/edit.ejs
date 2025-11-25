@@ -11,14 +11,14 @@
 <body>
     <div class="newPostHeading">
         <h1>Edit Your Post</h1>
-        <form method="post" action="/posts/<%= currentPost.userId %>?_method=patch">
+        <form method="post" action="/posts/<%= resp.userId %>?_method=patch">
             <div class="newuserSection">
                 <label for="user">Change your Username</label>
-                <input id="user" name="username" value="<%= currentPost.username %>">
+                <input id="user" name="username" value="<%= resp.username %>">
             </div>
             <div class="newCommentSection">
                 <label for="content">Change your Content</label>
-                <textarea id="content" name="content" rows="4" cols="40"><%= currentPost.content %></textarea>
+                <textarea id="content" name="content" rows="4" cols="40"><%= resp.content %></textarea>
             </div>
             <br>
             <div>
